@@ -45,5 +45,8 @@
 		],
 		"no-empty-function": "off",
 		"@typescript-eslint/no-empty-function": "off",
+		"no-unused-vars": 1,
+		"no-redeclare": 1,
+		"no-console": 1
 	}
 }
