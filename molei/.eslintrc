@@ -49,9 +49,9 @@
 		"no-redeclare": 1,
 		"no-console": 1,
 		"ignoreUrls": true,
-		"max-len": [
+		"max-lines": [
 			"error",
-			{ "code": 500 }
+			500
 		]
 	}
 }
