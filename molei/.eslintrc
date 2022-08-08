@@ -10,7 +10,7 @@
 		"plugin:react-hooks/recommended",
 		"plugin:@typescript-eslint/recommended",
 		"plugin:@typescript-eslint/eslint-recommended",
-    	"plugin:@typescript-eslint/recommended-requiring-type-checking",
+    	"plugin:@typescript-eslint/recommended-requiring-type-checking"
 	],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
@@ -47,6 +47,11 @@
 		"@typescript-eslint/no-empty-function": "off",
 		"no-unused-vars": 1,
 		"no-redeclare": 1,
-		"no-console": 1
+		"no-console": 1,
+		"ignoreUrls": true,
+		"max-len": [
+			"error",
+			{ "code": 500 }
+		]
 	}
 }
