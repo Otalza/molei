@@ -24,7 +24,8 @@
 	"plugins": [
 		"react",
 		"react-hooks",
-		"@typescript-eslint"
+		"@typescript-eslint",
+		"simple-import-sort"
 	],
 	"rules": {
 		"indent": [
@@ -48,10 +49,90 @@
 		"no-unused-vars": 1,
 		"no-redeclare": 1,
 		"no-console": 1,
-		"ignoreUrls": true,
 		"max-lines": [
 			"error",
 			500
-		]
-	}
+		],
+		"max-depth": [
+			"error",
+			4
+		],
+		"max-len": [
+			"error",
+			{ 
+				"code": 80,
+			 	"ignoreUrls": true
+			}
+		],
+		"object-curly-newline": [
+			"error",
+			{
+				"ObjectExpression": "always",
+				"ImportDeclaration": "never"
+			}
+		],
+		"comma-spacing": [
+			"error", 
+			{ 
+				"before": false,
+				"after": true 
+			}
+		],
+		"arrow-body-style": [
+			"error",
+			"as-needed"
+		],
+		"curly": [
+			"error",
+			"multi",
+			"consistent"
+		],
+		"brace-style": "error",
+		"object-curly-spacing": [
+			"error",
+			"always"
+		],
+		"simple-import-sort/imports": "error",
+		"simple-import-sort/exports": "error",
+		"sort-keys": [
+			"error",
+			"asc",
+			{
+				"caseSensitive": true,
+				"natural": false,
+				"minKeys": 2
+			}
+		],
+		"max-lines-per-function": [
+			"error",
+			{
+				 "max": 30,
+				 "skipBlankLines": true,
+				 "skipComments": true
+			}
+		],
+		"multiline-comment-style": [
+			"error",
+			"separate-lines"
+		],
+		"no-unneeded-ternary": [
+			"error", 
+			{ 
+				"defaultAssignment": false 
+			}
+		],
+		"no-duplicate-imports": "error"
+	},
+	// "padded-blocks": [
+	// 	"error",
+	// 	"always"
+	// ],
+	"padding-line-between-statements": [
+		"error",
+		{
+			"blankLine": "always",
+			"prev": "*",
+			"next": "return"
+		}
+	]
 }
