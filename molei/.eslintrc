@@ -122,17 +122,5 @@
 			}
 		],
 		"no-duplicate-imports": "error"
-	},
-	// "padded-blocks": [
-	// 	"error",
-	// 	"always"
-	// ],
-	"padding-line-between-statements": [
-		"error",
-		{
-			"blankLine": "always",
-			"prev": "*",
-			"next": "return"
-		}
-	]
+	}
 }
