@@ -8,7 +8,7 @@ const App = () => (
 	</View>
 )
 
-console.log('hehe')
+console.log('hehe2')
 
 const styles = StyleSheet.create({
 	container: {
