@@ -4,6 +4,9 @@
       },
       "eslint.format.enable": true,
       "eslint.workingDirectories": [
-        "molei/"
-      ]
+        "/"
+      ],
+      "files.exclude": {
+        "**/.git": false
+   }
 }
