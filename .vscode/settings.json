@@ -4,7 +4,7 @@
       },
       "eslint.format.enable": true,
       "eslint.workingDirectories": [
-        "/"
+        "./"
       ],
       "files.exclude": {
         "**/.git": false

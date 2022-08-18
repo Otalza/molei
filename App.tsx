@@ -8,6 +8,8 @@ const App = () => (
 	</View>
 )
 
+console.log('hi')
+
 const styles = StyleSheet.create({
 	container: {
 		alignItems: 'center',
