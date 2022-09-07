@@ -3,7 +3,7 @@ import React, { StyleSheet, Text, View } from 'react-native'
 
 const App = () => (
 	<View style={styles.container}>
-		<Text>i made rn app</Text>
+		<Text style={styles.text}>i made rn app</Text>
 		<StatusBar style="auto" />
 	</View>
 )
@@ -13,8 +13,12 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 		backgroundColor: '#fff',
 		flex: 1,
+		fontSize: 50,
 		justifyContent: 'center',
 	},
+	text: {
+		fontSize: 50,
+	}
 })
 
 export default App
