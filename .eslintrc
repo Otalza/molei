@@ -99,15 +99,6 @@
 		],
 		"simple-import-sort/imports": "error",
 		"simple-import-sort/exports": "error",
-		// "sort-keys": [
-		// 	"error",
-		// 	"asc",
-		// 	{
-		// 		"caseSensitive": true,
-		// 		"natural": false,
-		// 		"minKeys": 2
-		// 	}
-		// ],
 		"sort-keys-fix/sort-keys-fix": "warn",
 		"max-lines-per-function": [
 			"error",
