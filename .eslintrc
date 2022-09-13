@@ -1,0 +1,123 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+		"node": true
+    },
+    "settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+    "extends": [
+        "eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:react-hooks/recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+    	"plugin:@typescript-eslint/recommended-requiring-type-checking"
+    ],
+    "overrides": [
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": "tsconfig.json"
+    },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "simple-import-sort",
+		"sort-keys-fix",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+		"no-empty-function": "off",
+		"@typescript-eslint/no-empty-function": "off",
+		"no-unused-vars": 1,
+		"no-redeclare": 1,
+		"no-console": 1,
+		"max-lines": [
+			"error",
+			500
+		],
+		"max-depth": [
+			"error",
+			4
+		],
+		"max-len": [
+			"error",
+			{ 
+				"code": 80,
+			 	"ignoreUrls": true
+			}
+		],
+		"object-curly-newline": [
+			"error",
+			{
+				"ObjectExpression": "always",
+				"ImportDeclaration": "never"
+			}
+		],
+		"comma-spacing": [
+			"error", 
+			{ 
+				"before": false,
+				"after": true 
+			}
+		],
+		"arrow-body-style": [
+			"error",
+			"as-needed"
+		],
+		"curly": [
+			"error",
+			"multi",
+			"consistent"
+		],
+		"brace-style": "error",
+		"object-curly-spacing": [
+			"error",
+			"always"
+		],
+		"simple-import-sort/imports": "error",
+		"simple-import-sort/exports": "error",
+		"sort-keys-fix/sort-keys-fix": "warn",
+		"max-lines-per-function": [
+			"error",
+			{
+				 "max": 30,
+				 "skipBlankLines": true,
+				 "skipComments": true
+			}
+		],
+		"multiline-comment-style": [
+			"error",
+			"separate-lines"
+		],
+		"no-unneeded-ternary": [
+			"error", 
+			{ 
+				"defaultAssignment": false 
+			}
+		],
+		"no-duplicate-imports": "error"
+    }
+}
